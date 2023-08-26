@@ -1,0 +1,24 @@
+package ArrayListTopic;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class MultidimensionalArrayList {
+
+	public static void main(String[] args) {
+		Scanner in  = new Scanner(System.in);
+;	// TODO Auto-generated method stub
+		//created a multiDimension ArrayList
+		ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
+		//now initializing the inner ArrayList
+		for(int i = 0;i<3.;i++) {
+			list.add(new ArrayList<>());
+			
+		}
+		for(int i = 0;i<3;i++) {
+			for(int j = 0;j<3;j++) {
+				list.get(i).add(in.nextInt());
+			}
+		}
+		System.out.println(list);
+	}
+
+}
